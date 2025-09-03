@@ -12,16 +12,21 @@ def resize_image(image, new_width=100):
     resized_image = image.resize((new_width, new_height))
     return resized_image
 
+# Convert each pixel to grayscale
 def grayify(image):
 
     return image.convert("L")
 
+
+# Convert pixels to a string of ASCII characters
 def pixels_to_ascii(image):
     pixels = image.getdata()
     # Map pixel value (0-255) to ASCII_CHARS index (0 to len(ASCII_CHARS)-1)
     characters = "".join([ASCII_CHARS[pixel * (len(ASCII_CHARS) - 1) // 255] for pixel in pixels])
     return characters
 
+
+# Main function to handle the process
 def main():
     path = input("Enter a valid path to an image (e.g., img/images.jpeg):\n")
     try:
