@@ -2,7 +2,7 @@ from matplotlib.image import imread
 import matplotlib.pyplot as plt
 import numpy as np
 
-input_image = imread("d:\Download\ghhh.jpg")
+input_image = imread("Enter the path of your image here")
 
 
 r,g,b = input_image[:,:,0] , input_image[:,:,1] , input_image[:,:,2]
