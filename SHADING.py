@@ -13,6 +13,7 @@ def resize_image(image, new_width=100):
     return resized_image
 
 def grayify(image):
+
     return image.convert("L")
 
 def pixels_to_ascii(image):
@@ -50,6 +51,5 @@ def main():
 if __name__ == "__main__":
     main()
   
-    print("This line is outside the if __name__ == '__main__': block")
 
 main()
