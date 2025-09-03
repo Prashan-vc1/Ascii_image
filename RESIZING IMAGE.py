@@ -8,6 +8,6 @@ def resize(im,new_width):
     return resized_image
 
 
-im = Image.open("d:\Download\zoro.jpg")
+im = Image.open("Enter the path of your image here")
 im = im.resize((500,500))
 im.show()
